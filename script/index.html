@@ -3,9 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>QR Generator</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" ></script>
+    <style >
+        body{background-color: rgb(39, 58, 126);}
+        .heading{height: 30vh;width: 100vw;display: flex;justify-content: center;align-items: center;}
+        .qrdiv{height: 70vh;width: 100vw;display: flex;justify-content: center;}
+    </style>
 </head>
-<body>
+<body >
+    <div class="heading"> <h1>QR Code Generator</h1></div>
+   
+   <div class="qrdiv"> <div id="qrcode"></div></div>
+    <script type="text/javascript">
+        const input= prompt("Enter What you want to create")    ;
+    
+        new QRCode(document.getElementById("qrcode"), input);
+        </script>
+
+    <script src="QR.js" ></script>
     
 </body>
 </html>
