@@ -4,40 +4,64 @@
     box-sizing: border-box;
 }
 body{
-    background-color: rgb(35, 35, 121);
+    background-color: rgb(135, 206, 235);
     height:100vh;
     font-family:Arial, Helvetica, sans-serif;
+    background-image: url("https://images.pexels.com/photos/11167645/pexels-photo-11167645.jpeg?auto=compress&cs=tinysrgb&w=600");
+     background-size:100% 100%;
+    
+    
 }
 .main{
-    background-color: white;
-    max-width: 500px;
-    margin: 50px auto;
-    padding:30px;
+    color:white;
+    max-width: 400px;
+    margin: 0px auto;
+    padding:20px;
     border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+     background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.1);
+    border: 1px solid;
     
 }
 .searchForm{
     display: flex;
     align-items: center;
+    
 }
 .searchtype{
     flex: 1;
     padding: 20px;
-    border: 2px solid rgb(29, 29, 208);
+    border: 2px solid rgb(239, 239, 247);
     border-radius: 10px;
     font-size: 1rem;
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.1);
+    color: aliceblue;
+    
 }
 .searchbtn{
-    background-color: rgb(93, 93, 247);
+    background-color: rgb(249, 249, 253);
     padding: 16px;
     border:none;
     border-radius: 10px;
     margin-left: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.1);
+    border: 1px solid white;
 }
+.searchbtn i{
+    color: aliceblue;
+}
+
 .searchbtn:hover{
-    background-color: rgb(22, 22, 197);
+    
+    background-color: rgb(75, 75, 78);
 }
 .citydate{
     margin-top:30px;
@@ -51,7 +75,7 @@ body{
     font-size: 2rem;
 }
 .citydate .date{
-    background-color: rgb(136, 239, 239);
+   
     padding:5px 10px;
     border-radius: 15px;
 }
@@ -82,14 +106,14 @@ body{
     align-items: center;
 }
 .windinfo, .humidityinfo, .visibilityinfo {
-    background-color: #ecf0f1;
+   
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 15px;
     border-radius: 10px;
-    padding: 20px 20px;
+    padding: 10px 10px;
     box-shadow: rgba(0,0,0,0.24)  0px 8px 3px;
 
 }
@@ -100,4 +124,8 @@ body{
 
 .windinfo, .humidityinfo, .visibilityinfo {
     text-align: center;
+}
+footer{
+    color: grey;
+    opacity: 0.06;
 }
